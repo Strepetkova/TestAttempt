@@ -79,6 +79,7 @@ namespace TestAttempt
             this.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BasicForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BasicForm";
             ((System.ComponentModel.ISupportInitialize)(this.logoFormPic)).EndInit();
             this.ResumeLayout(false);
