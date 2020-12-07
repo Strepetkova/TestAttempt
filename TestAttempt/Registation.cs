@@ -99,7 +99,7 @@ namespace TestAttempt
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Выберите свое фото";
-            ofd.Filter = "Файл jpg, gif, png| *.jpg; *.gif; *.png;";
+            ofd.Filter = "Файлы jpg, gif, png| *.jpg; *.gif; *.png;";
             DialogResult dr = ofd.ShowDialog();
             if(dr == DialogResult.OK)
             {
