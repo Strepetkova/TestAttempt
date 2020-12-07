@@ -68,7 +68,7 @@ namespace TestAttempt
             // nameLb
             // 
             this.nameLb.AutoSize = true;
-            this.nameLb.Location = new System.Drawing.Point(212, 120);
+            this.nameLb.Location = new System.Drawing.Point(211, 172);
             this.nameLb.Name = "nameLb";
             this.nameLb.Size = new System.Drawing.Size(46, 19);
             this.nameLb.TabIndex = 3;
@@ -77,7 +77,7 @@ namespace TestAttempt
             // surnameLb
             // 
             this.surnameLb.AutoSize = true;
-            this.surnameLb.Location = new System.Drawing.Point(175, 169);
+            this.surnameLb.Location = new System.Drawing.Point(175, 129);
             this.surnameLb.Name = "surnameLb";
             this.surnameLb.Size = new System.Drawing.Size(83, 19);
             this.surnameLb.TabIndex = 4;
@@ -148,14 +148,14 @@ namespace TestAttempt
             // 
             // nameTb
             // 
-            this.nameTb.Location = new System.Drawing.Point(279, 117);
+            this.nameTb.Location = new System.Drawing.Point(279, 166);
             this.nameTb.Name = "nameTb";
             this.nameTb.Size = new System.Drawing.Size(239, 25);
             this.nameTb.TabIndex = 12;
             // 
             // surnameTb
             // 
-            this.surnameTb.Location = new System.Drawing.Point(279, 166);
+            this.surnameTb.Location = new System.Drawing.Point(279, 123);
             this.surnameTb.Name = "surnameTb";
             this.surnameTb.Size = new System.Drawing.Size(239, 25);
             this.surnameTb.TabIndex = 13;
@@ -178,6 +178,7 @@ namespace TestAttempt
             // 
             this.repeatPassTb.Location = new System.Drawing.Point(279, 336);
             this.repeatPassTb.Name = "repeatPassTb";
+            this.repeatPassTb.PasswordChar = '*';
             this.repeatPassTb.Size = new System.Drawing.Size(239, 25);
             this.repeatPassTb.TabIndex = 16;
             // 
@@ -194,6 +195,7 @@ namespace TestAttempt
             // 
             this.passwordTb.Location = new System.Drawing.Point(279, 293);
             this.passwordTb.Name = "passwordTb";
+            this.passwordTb.PasswordChar = '*';
             this.passwordTb.Size = new System.Drawing.Size(239, 25);
             this.passwordTb.TabIndex = 18;
             // 

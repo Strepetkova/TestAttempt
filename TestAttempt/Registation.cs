@@ -40,7 +40,7 @@ namespace TestAttempt
                 }
                 else
                 {
-                    Employee employee = db.Employee.Find(loginTb.Text);
+                    Employee employee = db.Employee.FirstOrDefault(x => x.Login == loginTb.Text.ToUpper());
                     if (employee != null)
                     {
                         MessageBox.Show("Внимание! Пользователь с таким логином уже существует!",
@@ -99,7 +99,7 @@ namespace TestAttempt
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Выберите свое фото";
-            ofd.Filter = "Файл jpd, gif, png| *.jpd; *.gif; *.png;";
+            ofd.Filter = "Файл jpg, gif, png| *.jpg; *.gif; *.png;";
             DialogResult dr = ofd.ShowDialog();
             if(dr == DialogResult.OK)
             {
@@ -109,7 +109,8 @@ namespace TestAttempt
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            Authorisation.au.Show();
+            Authorisation au = new Authorisation();
+            au.Show();
             Close();
         }
     }

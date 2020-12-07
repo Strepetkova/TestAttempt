@@ -26,7 +26,7 @@ namespace TestAttempt
 
         private void FormOfManagerC_Load(object sender, EventArgs e)
         {
-            helloLb.Text = "Добро пожаловать," + Authorisation.em.Surname + " " + Authorisation.em.Surname + " " + Authorisation.em.MiddleName + "!";
+            helloLb.Text = "Добро пожаловать," + Authorisation.em.Surname + " " + Authorisation.em.Name + " " + Authorisation.em.MiddleName + "!";
         }
     }
 }

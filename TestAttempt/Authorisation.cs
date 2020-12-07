@@ -42,22 +42,24 @@ namespace TestAttempt
                     au = this;
                     if(employee.Role == "Администратор")
                     {
-
+                        ClearTextBox();
                     }
                     if (employee.Role == "Менеджер А")
                     {
-
+                        ClearTextBox();
                     }
                     if (employee.Role == "Менеджер С")
                     {
                         FormOfManagerC mc = new FormOfManagerC();
                         mc.Show();
+                        ClearTextBox();
                         Hide();
                     }
                     if (employee.Role == "Удален")
                     {
                         MessageBox.Show("Внимание! Ваш аккаунт приобрел роль Удален, поэтому вы не можете зайти! Обратитесь к администратору!",
                             "Ошибка входа в систему: роль Удален", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        ClearTextBox();
                     }
                 }
                 else
@@ -65,10 +67,15 @@ namespace TestAttempt
                     MessageBox.Show("Внимание! Неправильный логин или пароль! Проверьте правильность введенных данных!",
                         "Ошибка входа в систему: неправильный логин или пароль", MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
+                    passwordTb.Clear();
                 }
             }
         }
-
+        public void ClearTextBox()
+        {
+            loginTB.Clear();
+            passwordTb.Clear();
+        }
         private void SignUpButton_Click(object sender, EventArgs e)
         {
             Registation reg = new Registation();

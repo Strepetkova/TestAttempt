@@ -93,6 +93,7 @@ namespace TestAttempt
             // 
             this.passwordTb.Location = new System.Drawing.Point(291, 182);
             this.passwordTb.Name = "passwordTb";
+            this.passwordTb.PasswordChar = '*';
             this.passwordTb.Size = new System.Drawing.Size(228, 25);
             this.passwordTb.TabIndex = 7;
             // 
