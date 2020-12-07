@@ -39,7 +39,7 @@ namespace TestAttempt
             // 
             this.logoFormPic.Image = global::TestAttempt.Properties.Resources.цветоккапля;
             this.logoFormPic.Location = new System.Drawing.Point(246, 13);
-            this.logoFormPic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logoFormPic.Margin = new System.Windows.Forms.Padding(4);
             this.logoFormPic.Name = "logoFormPic";
             this.logoFormPic.Size = new System.Drawing.Size(78, 67);
             this.logoFormPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -77,7 +77,7 @@ namespace TestAttempt
             this.Controls.Add(this.nameFormLb);
             this.Controls.Add(this.logoFormPic);
             this.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BasicForm";
             this.Text = "BasicForm";
             ((System.ComponentModel.ISupportInitialize)(this.logoFormPic)).EndInit();
@@ -88,9 +88,9 @@ namespace TestAttempt
 
         #endregion
 
-        private System.Windows.Forms.PictureBox logoFormPic;
-        private System.Windows.Forms.Label nameFormLb;
-        private System.Windows.Forms.Button exitButton;
+        public System.Windows.Forms.PictureBox logoFormPic;
+        public System.Windows.Forms.Label nameFormLb;
+        public System.Windows.Forms.Button exitButton;
     }
 }
 
