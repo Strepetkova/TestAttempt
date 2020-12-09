@@ -73,6 +73,12 @@
     <Compile Include="FormOfManagerA.Designer.cs">
       <DependentUpon>FormOfManagerA.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterfaceOfManagerA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceOfManagerA.Designer.cs">
+      <DependentUpon>InterfaceOfManagerA.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModelEF\Employee.cs" />
     <Compile Include="ModelEF\Mall.cs" />
     <Compile Include="ModelEF\Model1.cs" />
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormOfManagerA.resx">
       <DependentUpon>FormOfManagerA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceOfManagerA.resx">
+      <DependentUpon>InterfaceOfManagerA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

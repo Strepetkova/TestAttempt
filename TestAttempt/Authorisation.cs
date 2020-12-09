@@ -48,8 +48,8 @@ namespace TestAttempt
                     {
                         FormOfManagerA mc = new FormOfManagerA();
                         mc.Show();
-                        ClearTextBox();
                         Hide();
+                        ClearTextBox();
                     }
                     if (employee.Role == "Менеджер С")
                     {
