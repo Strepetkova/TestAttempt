@@ -11,9 +11,10 @@ using TestAttempt.ModelEF;
 
 namespace TestAttempt
 {
-    public partial class FormOfManagerC : TestAttempt.BasicForm
+    public partial class FormOfManagerA : TestAttempt.BasicForm
     {
-        public FormOfManagerC()
+        Model1 db = new Model1();
+        public FormOfManagerA()
         {
             InitializeComponent();
         }
@@ -24,9 +25,25 @@ namespace TestAttempt
             Close();
         }
 
-        private void FormOfManagerC_Load(object sender, EventArgs e)
+        private void FormOfManagerA_Load(object sender, EventArgs e)
         {
             helloLb.Text = "Добро пожаловать," + Authorisation.em.Surname + " " + Authorisation.em.Name + " " + Authorisation.em.MiddleName + "!";
+            renterBindingSource.DataSource = db.Rent.ToList();
+        }
+
+        private void removeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changeButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

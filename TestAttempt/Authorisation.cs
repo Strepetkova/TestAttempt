@@ -46,14 +46,14 @@ namespace TestAttempt
                     }
                     if (employee.Role == "Менеджер А")
                     {
-                        ClearTextBox();
-                    }
-                    if (employee.Role == "Менеджер С")
-                    {
-                        FormOfManagerC mc = new FormOfManagerC();
+                        FormOfManagerA mc = new FormOfManagerA();
                         mc.Show();
                         ClearTextBox();
                         Hide();
+                    }
+                    if (employee.Role == "Менеджер С")
+                    {
+                        ClearTextBox();
                     }
                     if (employee.Role == "Удален")
                     {

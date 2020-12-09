@@ -67,11 +67,11 @@
     <Compile Include="BasicForm.Designer.cs">
       <DependentUpon>BasicForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormOfManagerC.cs">
+    <Compile Include="FormOfManagerA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormOfManagerC.Designer.cs">
-      <DependentUpon>FormOfManagerC.cs</DependentUpon>
+    <Compile Include="FormOfManagerA.Designer.cs">
+      <DependentUpon>FormOfManagerA.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelEF\Employee.cs" />
     <Compile Include="ModelEF\Mall.cs" />
@@ -94,8 +94,8 @@
     <EmbeddedResource Include="BasicForm.resx">
       <DependentUpon>BasicForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormOfManagerC.resx">
-      <DependentUpon>FormOfManagerC.cs</DependentUpon>
+    <EmbeddedResource Include="FormOfManagerA.resx">
+      <DependentUpon>FormOfManagerA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +112,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\TestAttempt.ModelEF.Employee.datasource" />
+    <None Include="Properties\DataSources\TestAttempt.ModelEF.Renter.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
