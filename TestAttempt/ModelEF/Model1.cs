@@ -8,7 +8,7 @@ namespace TestAttempt.ModelEF
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=Model11")
+            : base("name=Model12")
         {
         }
 
@@ -68,7 +68,7 @@ namespace TestAttempt.ModelEF
                 .IsUnicode(false);
 
             modelBuilder.Entity<Mall>()
-                .Property(e => e.Sity)
+                .Property(e => e.City)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Mall>()

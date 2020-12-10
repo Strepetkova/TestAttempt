@@ -73,6 +73,12 @@
     <Compile Include="FormOfManagerA.Designer.cs">
       <DependentUpon>FormOfManagerA.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOfManagerC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOfManagerC.Designer.cs">
+      <DependentUpon>FormOfManagerC.cs</DependentUpon>
+    </Compile>
     <Compile Include="InterfaceOfManagerA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     <EmbeddedResource Include="FormOfManagerA.resx">
       <DependentUpon>FormOfManagerA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormOfManagerC.resx">
+      <DependentUpon>FormOfManagerC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InterfaceOfManagerA.resx">
       <DependentUpon>InterfaceOfManagerA.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +130,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\TestAttempt.ModelEF.Employee.datasource" />
+    <None Include="Properties\DataSources\TestAttempt.ModelEF.Mall.datasource" />
     <None Include="Properties\DataSources\TestAttempt.ModelEF.Renter.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
